@@ -1,6 +1,9 @@
 // 1. 주요 클래스 가져오기
+require('dotenv').config();
+
 const {Client, GatewayIntentBits, Events, EmbedBuilder} = require('discord.js');
-const {token} = require('./config.json');
+const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});
+const token = process.env.DISCORD_TOKEN;
 
 // 2. 클라이언트 객체 생성 (Guilds관련, 메시지관련 인텐트 추가)
 const client = new Client({
