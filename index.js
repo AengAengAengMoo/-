@@ -34,7 +34,6 @@ client.on(Events.GuildMemberAdd, (member) => {
         .setTitle(' ! 새 칭구 등장 ! ')
         .setDescription(`두둥, 새 칭구 ${member.displayName} 등장! 환영환영~합니다`)
         .setThumbnail(member.user.displayAvatarURL())
-        .setTimestamp()
 
     welcomeChannel.send({ embeds: [welcomeEmbed]});
 })
