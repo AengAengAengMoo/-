@@ -31,8 +31,8 @@ client.on(Events.GuildMemberAdd, (member) => {
     //환영 메시지 전송
     const welcomeEmbed = new EmbedBuilder()
         .setColor(0x0099FF)
-        .setTitle(' ! 새 칭구 등장 ! ')
-        .setDescription(`:tada:두둥, 새 칭구 :sparkles: **${member.displayName}**:sparkles:  등장! 환영환영~합니다\n:clap::clap::clap:`)
+        .setTitle(' ! 새 칭구 등장 ! o((>ω< ))o')
+        .setDescription(`🎉╰(*°▽°*)╯ 두둥, 새 칭구 ✨**${member.displayName}**✨ 등장! 환영환영~합니다\n👏👏👏(●'◡'●)`)
         .setThumbnail(member.user.displayAvatarURL())
 
     welcomeChannel.send({ embeds: [welcomeEmbed]});
