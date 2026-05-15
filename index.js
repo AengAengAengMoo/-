@@ -2,7 +2,6 @@
 require('dotenv').config();
 
 const {Client, GatewayIntentBits, Events, EmbedBuilder} = require('discord.js');
-const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]});
 const token = process.env.DISCORD_TOKEN;
 
 // 2. 클라이언트 객체 생성 (Guilds관련, 메시지관련 인텐트 추가)
